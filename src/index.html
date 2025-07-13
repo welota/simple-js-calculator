@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cal" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+    <div class="calculator">
+        <p id="success">text copied!</p>
+        <input type="text" id="input" placeholder="0" onclick="copyContent()" readonly>
+        <div class="buttons">
+            <button type="button" onclick="pow()"><sub>x</sub><sup>x</sup></button>
+            <button type="button" onclick="clearEntry()">CE</button>
+            <button type="button" onclick="clearDisplay()" id="clear">C</button>
+            <button type="button" onclick="backspace()" id="backspace"><img src="assets/backspace.svg" alt="<x|"></button>
+            <button type="button" onclick="divideByOne()"><sup>1</sup>/<sub>x</sub></button>
+            <button type="button" onclick="powByTwo()">x<sup>2</sup></button>
+            <button type="button" onclick="sqrt()"><sup>2</sup>√x</button>
+            <button type="button" onclick="buttonClick('/')" class="operator">/</button>
+            <button type="button" onclick="buttonClick('7')">7</button>
+            <button type="button" onclick="buttonClick('8')">8</button>
+            <button type="button" onclick="buttonClick('9')">9</button>
+            <button type="button" onclick="buttonClick('*')" class="operator">x</button>
+            <button type="button" onclick="buttonClick('4')">4</button>
+            <button type="button" onclick="buttonClick('5')">5</button>
+            <button type="button" onclick="buttonClick('6')">6</button>
+            <button type="button" onclick="buttonClick('-')" class="operator">-</button>
+            <button type="button" onclick="buttonClick('1')">1</button>
+            <button type="button" onclick="buttonClick('2')">2</button>
+            <button type="button" onclick="buttonClick('3')">3</button>
+            <button type="button" onclick="buttonClick('+')" class="operator">+</button>
+            <button type="button" onclick="changeValue()"><sup>+</sup>/<sub>-</sub></button>
+            <button type="button" onclick="buttonClick('0')">0</button>
+            <button type="button" onclick="buttonClick('.')">.</button>
+            <button type="submit" onclick="calculate()" id="calc">=</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
